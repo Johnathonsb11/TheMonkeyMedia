@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>TheMonkeyMedia</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <div id="container">
+            <video id="backgroundVideo" src="images/animatedBackground2.mp4" autoplay muted loop></video>
+            <div id="accounts" class="window">
+                <header class="windowHeader">
+                    <div class="headerName">
+                        <img class="headerIcon" src="images/1013.ico">
+                        <p class="headerText">Users</p>
+                    </div>
+                    <div class="homeWindowButtons">
+                        <div class="minimizeButton windowButtons">-</div>
+                        <div class="expandButton windowButtons">□</div>
+                        <div class="closeButton windowButtons">X</div>
+                    </div>
+                </header>
+                <div class="sideWindowContent windowContent"></div>
+            </div>
+            <div id="mainColumn" class="window">
+                <header class="windowHeader">
+                    <div class="headerName">
+                        <img class="headerIcon" src="images/105.ico">
+                        <p class="headerText">The Monkey Media</p>
+                    </div>
+                    <div class="homeWindowButtons">
+                        <div class="minimizeButton windowButtons">-</div>
+                        <div class="expandButton windowButtons">□</div>
+                        <div class="closeButton windowButtons">X
+                        </div>
+                    </div>
+                </header>
+                <div id="feedContent" class="windowContent"></div>
+            </div>
+            <div id="leaderboard" class="window">
+                <header class="windowHeader">
+                    <div class="headerName">
+                        <img class="headerIcon" src="images/1049.ico">
+                        <p class="headerText">Social Standing</p>
+                    </div>
+                    <div class="homeWindowButtons">
+                        <div class="minimizeButton windowButtons">-</div>
+                        <div class="expandButton windowButtons">□</div>
+                        <div class="closeButton windowButtons">X</div>
+                    </div>
+                </header>
+                <div class="sideWindowContent windowContent"></div>
+            </div>
+            <footer id="taskbar">
+                <div>
+                    <img class="taskbarIcon" src="images/358.ico">
+                </div>
+                <div>
+                    <img class="taskbarIcon" src="images/104.ico">
+                </div>
+                <div>
+                    <img class="taskbarIcon" src="images/1013.ico">
+                </div>
+                <div>
+                    <img class="taskbarIcon" src="images/1049.ico">
+                </div>
+            </footer>
+        </div>
+        
+        <!-- make sure this script tags are always at the bottom :) -->
+        <script src="script.js"></script>
+    </body>
+</html>
+
+<!-- To-Do List:
+* Accounts
+* Track total social credits
+-->

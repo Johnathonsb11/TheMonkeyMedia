@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5vh;
+}
+
+html {
+    overflow: hidden;
+
+    /* making the awesome homepage image fullscreen */
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -moz-background-size: cover;
+
+    color: black;
+    font-family: Malgun Gothic Semilight;
+    font-weight: 100;
+}
+
+/* ah un byutoon? */
+/*
+You dont need to nest the tags like this
+body {
+    button {
+
+    }
+}
+
+instead you can just target the html tag directly by doing just
+
+button {
+    this targets all buttons
+}
+
+or the id for it if you want to just change that tag specifically
+
+#homeheader {
+    this targets the homeheader button only
+}
+
+.classname {
+    this targets all tags with this specified class name
+}
+
+*/
+
+
+#container { 
+    /* ignore this it dont matter */
+    height: 97vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
+
+.windowHeader {
+    background-color: rgba(212, 208, 200, 0.5);
+    height: 3vh;
+    width: 100%;
+    font: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    box-shadow: rgba(255, 255, 255, 0.6) 0 -1px 1px inset, rgba(0, 0, 0, 0.5) 0 1px 1px;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.headerName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
+}
+
+.headerText {
+    /* trying to make the font look shitty and low res (harder than it looks) */
+    display: inline-block;
+    font: inherit;
+    text-shadow: rgba(0, 0, 0, 0.5) 0.5px 0.2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    filter: blur(0.35px);
+    letter-spacing: 3px;
+    transform: scale(0.9, 1.15);
+}
+
+.headerIcon {
+    height: 2vh;
+    width: 2vh;
+}
+
+.homeWindowButtons {
+    height: 2vh;
+    width: 9vh;
+    margin-right: 0.5vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.windowButtons {
+    flex: 1;
+    height: 1.5vh;
+
+    box-shadow: rgba(0, 0, 0, 0.5) -1px -1px 1px inset, rgba(255, 255, 255, 0.6) -1px 0px 1px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5) 15%, rgba(0, 0, 0, 0) 80%, rgba(255, 255, 255, 0.5));
+
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    text-shadow: 1px 1px 1px black;
+
+    cursor: pointer;
+}
+
+.minimizeButton {
+    border-bottom-left-radius: 4px;
+}
+
+.expandButton {
+    font-size: 0.6rem;
+}
+
+.closeButton {
+    border-bottom-right-radius: 4px;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+#backgroundVideo {
+    position: absolute;
+    z-index: -1;
+    min-height: 108.1vh;
+    min-width: 100%;
+}
+
+#accounts {
+    left: 11%;
+    height: 85vh;
+    width: 15%;
+    margin-top: 6vh;
+    margin-right: 2vh;
+}
+
+#mainColumn {
+    height: 90vh;
+    width: 45%;
+    margin-top: 3vh;
+}
+
+#leaderboard {
+    right: 11%;
+    height: 85vh;
+    width: 15%;
+    margin-top: 6vh;
+    margin-left: 2vh;
+}
+
+.window {
+    background-color: rgba(43, 149, 255, 0.9);
+    box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(255, 255, 255, 0.6) -1px -1px 1px inset;
+    border-radius: 6px;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.windowContent {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px inset, rgba(255, 255, 255, 0.4) 1px 1px 1px;
+}
+
+#feedContent {
+    height: 86vh;
+    width: 98%
+}
+
+.sideWindowContent {
+    height: 81vh;
+    width: 95%
+}
+
+#taskbar {
+    height: 4vh;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0px;
+
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px inset, rgba(0, 0, 0, 0.5) 0 -1px 1px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+#taskbar div {
+    margin-right: 0.1%;
+    margin-left: 0.1%;
+    width: 2.5%;
+    height: 3.5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.6) -1px -1px 1px, rgba(0, 0, 0, 0.6) 1px -1px 1px, rgba(255, 255, 255, 0.7) 1px 1px 1px inset;
+    background-image: linear-gradient(165deg, rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 80%, rgba(255, 255, 255, 0.3) 90%);
+}
+
+#taskbar div:first-child {
+    box-shadow: none;
+    background-image: none;
+}
+
+.taskbarIcon {
+    height: 3vh;
+}
